@@ -1,25 +1,14 @@
 .playerBox{
-    width: 30vw;
-    height: 50vh;
+    width: 40vw;
+    height: 30vh;
     display: flex;
-    flex-wrap: wrap;
+    
+    justify-content: space-evenly;
     margin-top: 15%;
 
 
 }
 
-.paper{
-    width: 250px;
-    height: 250px;
-    border: double 20px transparent;
-    border-radius: 50%;
-    background-image: linear-gradient( #f2f3f4,  #f2f3f4), radial-gradient(circle at top left, 	#4865F4, #5671F5);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    margin: 3%;
-    display:flex;
-    align-items: center;
-}
 img{
     width: 150px;
     height: 150px;
@@ -27,31 +16,11 @@ img{
     margin-top: 10%;
     
 }
-.divider {
-    flex-grow: 1;
-    border-bottom: 1px solid black;
-    margin: 5px
-  }
 
-.scissors{
-    width: 250px;
-    height: 250px;
-    border: double 20px transparent;
-    border-radius: 50%;
-    background-image: linear-gradient( #f2f3f4,  #f2f3f4), radial-gradient(circle at top left, 	#EC9E0E, #ECA922);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    margin: 3%;
-}
-
-.rock{
-    width: 250px;
-    height: 250px;
-    border: double 20px transparent;
-    border-radius: 50%;
-    background-image: linear-gradient( #f2f3f4,  #f2f3f4), radial-gradient(circle at top left, 	#DC2E4E, #DD405D);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    margin: 3%;
-    margin-left: 27%;
+.playerbox2 {
+    width: 40vw;
+    height: 30vh;
+    display: flex;
+    
+    justify-content: center;
 }

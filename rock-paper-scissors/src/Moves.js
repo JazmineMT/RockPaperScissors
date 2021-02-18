@@ -1,21 +1,19 @@
 import React from 'react'
 import './Moves.css';
-import filled from './images/outlined.png'
-import rock from './images/rock.png'
-import paper from './images/paper.png'
+import Scissors from './Moves/Scissors'
+import Paper from './Moves/Paper'
+import Rock from './Moves/Rock'
 
 export default function Moves() {
     return (
+        <>
         <div className='playerBox'>
-            <div className='paper'>
-            <img className='' src={paper} alt='paper'/>
-            </div>
-            <div className='scissors'>
-                    <img className='' src={filled} alt='paper'/>
-            </div>
-            <div className='rock'>
-            <img className='' src={rock} alt='paper'/>
-            </div>
+                <Paper/>
+                <Scissors/>
         </div>
+        <div className='playerbox2'>
+            <Rock/>
+        </div>
+        </>
     )
 }
