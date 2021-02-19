@@ -24,3 +24,10 @@ img{
     
     justify-content: center;
 }
+
+button{
+    background: transparent;
+    box-shadow: 0%;
+    border: 0px solid transparent;
+    outline: none;
+}

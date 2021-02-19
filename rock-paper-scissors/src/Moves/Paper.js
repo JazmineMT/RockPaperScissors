@@ -8,7 +8,7 @@ export default function Paper() {
             <Papers>
                 <div>
                      <img className='' src={paper} alt='paper'/>
-            </div>
+                </div>
             </Papers>
         </div>
     )
