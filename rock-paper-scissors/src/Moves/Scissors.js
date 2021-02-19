@@ -6,7 +6,9 @@ export default function Scissors() {
     return (
         <div>
             <Scissor>
-            <img className='' src={filled} alt='paper'/>
+                <div>
+                 <img className='' src={filled} alt='paper'/>
+                 </div>
             </Scissor>
         </div>
     )

@@ -6,7 +6,9 @@ export default function Paper() {
     return (
         <div>
             <Papers>
-            <img className='' src={paper} alt='paper'/>
+                <div>
+                     <img className='' src={paper} alt='paper'/>
+            </div>
             </Papers>
         </div>
     )

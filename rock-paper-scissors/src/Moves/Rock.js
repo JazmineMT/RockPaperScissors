@@ -6,7 +6,9 @@ export default function Rock() {
     return (
         <div>
             <Rocks>
+                <div>
                 <img src={rock} alt='paper'/>
+                </div>
             </Rocks>
         </div>
     )
