@@ -3,7 +3,7 @@ import {useState} from 'react'
 import './Header.css';
 
 export default function Header(props) {
-     const [score, setScore] = useState(0)
+    
     return (
         <div className='heading'>
           <div className='title'>
@@ -13,7 +13,7 @@ export default function Header(props) {
           </div>
           <div className='scoreBox'>
             <h2 className='scoretitle'> score </h2>
-            <h1 className='userScore'> {score}</h1>
+            <h1 className='userScore'> {props.score}</h1>
             <div className='score'>
 
             </div>

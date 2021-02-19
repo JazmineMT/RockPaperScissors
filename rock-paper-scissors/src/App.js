@@ -1,23 +1,20 @@
-import React ,  { useState } from 'react'
+import React ,  { PureComponent, useState } from 'react'
 import './App.css';
 import Header from './Header.js'
 import Moves from './Moves.js'
-import Scissors from './Moves/Scissors';
+import Outcome from './Outcome'
 import PopUp from './PopUp.js'
-
 
 const choices =  ['rock', 'paper', 'scissors']
 
+
 function App() {
   const [pchoice , setpchoice] = useState(null)
-  const cchoice = getRandomInt(3)
-  console.log(choices[cchoice],pchoice)
+  const [score , setscore] = useState(0)
+  const [decision , setdecision] = useState('Lose')
+  const [house , setHouse ] = useState(null)
+  console.log(decision )
 
-  function getRandomInt(max) {
-    return Math.floor(Math.random() * Math.floor(max));
-  }
-
-  
 
 
 
@@ -26,13 +23,14 @@ function App() {
   return (
     <div className="App">
       <div className='container'>
-        <Header></Header>
+        <Header score ={score}></Header>
         {pchoice === null && (
-             <Moves choice={setpchoice}></Moves>
+             <Moves  house = {setHouse} choice={setpchoice}></Moves>
         )}
-        {/* {pchoice != null && (
-
-        )} */}
+        
+        {pchoice != null && (
+           <Outcome num = {score} score = {setscore} decision = {setdecision} player={pchoice} computer={house}/>
+        )}
       </div>
       <div className='popBox'>
         <PopUp/>
