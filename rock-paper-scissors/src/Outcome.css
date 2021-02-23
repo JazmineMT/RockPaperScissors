@@ -1,5 +1,5 @@
 .outcomeBox{
-    width: 40vw;
+    width: 80vw;
     height: 30vh;
     display: flex;
     justify-content: space-around;
@@ -7,25 +7,10 @@
 }
 
 
-/* .player{
-    width: 20vw;
-    height: 40vh;
-    border: 2px solid black;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.house{
-    border: 2px solid black;
-    text-align: center;
-} */
-
 .titleBox{
     display: flex;
     justify-content: space-around;
-    width: 40vw;
+    width: 80vw;
     height: 10vh;
     margin-top: 15%;
 }

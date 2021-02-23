@@ -4,6 +4,7 @@ import Header from './Header.js'
 import Moves from './Moves.js'
 import Outcome from './Outcome'
 import PopUp from './PopUp.js'
+import NewGamePopup from './NewGamePopup'
 
 const choices =  ['rock', 'paper', 'scissors']
 
@@ -13,6 +14,7 @@ function App() {
   const [score , setscore] = useState(0)
   const [decision , setdecision] = useState('Lose')
   const [house , setHouse ] = useState(null)
+  const [complete , setcomplete] = useState(false)
   console.log(decision )
 
 
@@ -30,6 +32,11 @@ function App() {
         
         {pchoice != null && (
            <Outcome num = {score} score = {setscore} decision = {setdecision} player={pchoice} computer={house}/>
+         
+        )}
+
+        {pchoice != null && (
+           <NewGamePopup player ={setpchoice} decision={decision}/>
         )}
       </div>
       <div className='popBox'>
